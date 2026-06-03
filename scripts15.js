@@ -4,7 +4,7 @@ function main(config) {
 
   const ratioRe = /(?:\[(\d+(?:\.\d+)?)\s*[xX×]\]|(\d+(?:\.\d+)?)\s*[xX×倍]|[xX×倍]\s*(\d+(?:\.\d+)?))/i;
   const blackRe = /(?<!集)群|邀请|返利|官方|官网|网址|订阅|购买|续费|剩余|到期|过期|流量|备用|邮箱|客服|联系|工单|倒卖|防止|梯子|tg|发布|重置/i;
-  const flagMap = { '🇸🇬': 'SG', '🇺🇸': 'US', '🇯🇵': 'JP', '🇭🇰': 'HK', '🇹🇼': 'TW' };
+  const flagMap = { '🇺🇸': 'US', '🇯🇵': 'JP', '🇸🇬': 'SG', '🇭🇰': 'HK', '🇹🇼': 'TW' };
 
   const myManualRules = [
     "DOMAIN-SUFFIX,cn,DIRECT",
@@ -29,9 +29,9 @@ function main(config) {
   };
 
   const REGIONS = [
-    ["狮城节点", "新加坡|狮城|SG|SGP|Singapore|SIN", "Singapore.png"],
     ["美国节点", "美国|美|US|USA|UnitedStates|United States|纽约|NewYork|NYC|JFK|洛杉矶|LosAngeles|LAX|旧金山|SanFrancisco|SFO|圣好塞|SanJose|SJC|西雅图|Seattle|SEA|芝加哥|Chicago|ORD|达拉斯|Dallas|DFW|硅谷|SiliconValley", "United_States.png"],
     ["日本节点", "日本|日|JP|JPN|Japan|东京|Tokyo|TYO|NRT|HND|大阪|Osaka|KIX", "Japan.png"],
+    ["狮城节点", "新加坡|狮城|SG|SGP|Singapore|SIN", "Singapore.png"],
     ["香港节点", "香港|港|HK|HKG|HongKong|Hong Kong", "Hong_Kong.png"],
     ["台湾节点", "台湾|台|TW|TWN|Taiwan|台北|Taipei|TPE|新北|NewTaipei", "Taiwan.png"],
   ];
